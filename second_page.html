@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Latest compiled and minified CSS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -11,23 +12,75 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <title>Glitch Art</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.fa {
+  padding: 1px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 9px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+p {text-align: center;}
+h1 {text-align: center;}
+</style>
 </head>
 <body>
 <div class="container">
 <div class="jumbotron">
 
-<h1 style="text-align:center;">Glitch Art</h1>
+<h1>Glitch Art</h1> 
 </div>
-
-<!-- A grey horizontal navbar that becomes vertical on small screens -->
 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-
-  <!-- Links -->
-  <ul class="navbar-nav">
-  <ul class="nav nav-pills">
-    <li class="nav-item">
+ <ul class="navbar-nav">
+ <ul class="nav nav-pills">
       <a class="nav-link" href="index.html">Home</a>
     </li>
     <li class="nav-item">
@@ -56,15 +109,27 @@
     </li>
     <li class="nav-item">
       <a class="nav-link" href="tenth_page.html">About me</a>
-  </ul>
-
+</ul> 
 </nav>
-
-<img class="img-fluid img-thumbnail rounded" src="glitchimage1.jpg" alt="Ichigo" width="640" height="452" style = "display: block; margin-left: -110px; margin-right: auto; position: relative; top: 18px;">
-<img class="img-fluid img-thumbnail rounded" src="glitchimage3.jpg" alt="Ulquirroa" width="640" height="452" style = "display: block; margin-left: -110px; margin-right: auto; position: relative; top: 50px;">
-<img class="img-fluid img-thumbnail rounded" src="glitchimage2.JPG" alt="Aizen" width="450" height="700" style = "display: block; margin-left: 775px; margin-right: auto; position: relative; top: -804px;">
+</div> <br>
+<p>Distorting the code of various images through using the built-in text editor softwares on Windows and Mac as well as Audacity. For my images, I used the popular anime Bleach, which was one of the most eye-opening pieces of media I have watched growing up, especially because of how dark some aspects were in the anime. From the main character transforming into a devil-like creature to one of the most beloved characters becoming the main antagonist, Bleach showed me how occasionally dark some media can be. This is one of the reasons why I chose to glitch these images in particular: because they represent the element of morbidness in the anime.</p> <br> <br>
+<div class="row">
+  <div class="column">
+<a target="_blank" href="glitchimage1.jpg">
+<img src="glitchimage1.jpg" class= "img-fluid rounded mx-auto d-block" alt="Hichigo" style="width:85%"> <br>
+</a> 
+</div>
+<div class="column">
+<a target="_blank" href="glitchimage2.JPG">
+<img src="glitchimage2.JPG" class= "img-fluid rounded mx-auto d-block" alt="Ulquiorra" style="width:85%">
+</a>
+</div>
+<div class="column">
+<a target="_blank" href="glitchimage3.jpg">
+<img src="glitchimage3.jpg" class= "img-fluid rounded mx-auto d-block" alt="Aizen" style="width:85%">
+</a>
 </div>
 
-</body>
 
+</body>
 </html>
